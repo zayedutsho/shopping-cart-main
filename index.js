@@ -1,7 +1,12 @@
+
+
+//increase value
 function updateNum(incresev) {
 
+    //calling id
 
     const inputValue = document.getElementById('input-v1');
+    //get value
     const preInputValueStr = inputValue.value;
     const preInput = parseInt(preInputValueStr);
 
@@ -27,17 +32,20 @@ function updateNum(incresev) {
 
 }
 
+//increase price according to value num
+
 function totalprice(newValue) {
     const newtotalPrice = newValue * 1219;
-
+    //calling id
     const preprice = document.getElementById('price1');
+    //set new price value
     preprice.innerText = newtotalPrice;
 }
 
 
 
 
-
+//Plus clcick
 document.getElementById('btn-p1').addEventListener('click', function () {
 
     const newValue = updateNum(true);
